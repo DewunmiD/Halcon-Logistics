@@ -1,4 +1,16 @@
-.App {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add styles to your CSS file */
+.input-icon {
+  position: relative; /* Required for proper positioning of icons within the wrapper */
+  display: inline-flex; /* Ensures the icon stays inline with the input text */
+  align-items: left; /* Vertically aligns the icon within the wrapper */
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
