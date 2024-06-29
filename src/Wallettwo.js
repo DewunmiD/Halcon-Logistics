@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import MobileFooter from './MobileFooter'
 import { TbCurrencyNaira } from "react-icons/tb";
 import { FaDeleteLeft } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
@@ -24,9 +25,9 @@ const Wallettwo = () => {
   };
 
   return (
-    <div className=''>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'>
       <Navbar/>
-      <div className='w-5/6 mx-auto bg-red-600 mt-[100px] rounded-xl h-screen'>
+      <div className='w-5/6 mx-auto bg-red-600 mt-[100px] rounded-xl h-[500px]'>
         <h1 className='text-white flex items-center mt-4 justify-center mx-auto'>
           <TbCurrencyNaira className="text-3xl font-extrabold"/>
           <span className="text-3xl font-extrabold">{amount.toFixed(2)}</span>
@@ -34,23 +35,23 @@ const Wallettwo = () => {
         <div className="grid grid-cols-3 justify-content-space-between mt-10 text-white text-2xl font-bold">
 
           <ul className="justify-self-start ml-8 gap-y-12 cursor-pointer">
-            <li className="mb-20" onClick={() => handleNumberClick(1)}>1</li>
-            <li className="mb-20" onClick={() => handleNumberClick(4)}>4</li>
-            <li className="mb-20" onClick={() => handleNumberClick(7)}>7</li>
+            <li className="mb-12" onClick={() => handleNumberClick(1)}>1</li>
+            <li className="mb-12" onClick={() => handleNumberClick(4)}>4</li>
+            <li className="mb-12" onClick={() => handleNumberClick(7)}>7</li>
           </ul>
 
           <ul className="justify-self-center gap-y-12 cursor-pointer">
-            <li className="mb-20" onClick={() => handleNumberClick(2)}>2</li>
-            <li className="mb-20" onClick={() => handleNumberClick(5)}>5</li>
-            <li className="mb-20" onClick={() => handleNumberClick(8)}>8</li>
-            <li className="mb-20" onClick={() => handleNumberClick(0)}>0</li>
+            <li className="mb-12" onClick={() => handleNumberClick(2)}>2</li>
+            <li className="mb-12" onClick={() => handleNumberClick(5)}>5</li>
+            <li className="mb-12" onClick={() => handleNumberClick(8)}>8</li>
+            <li className="mb-12" onClick={() => handleNumberClick(0)}>0</li>
           </ul>
 
           <ul className="justify-self-end mr-8 gap-y-12 cursor-pointer">
-            <li className="mb-20" onClick={() => handleNumberClick(3)}>3</li>
-            <li className="mb-20" onClick={() => handleNumberClick(6)}>6</li>
-            <li className="mb-20" onClick={() => handleNumberClick(9)}>9</li>
-            <li className="mb-20"><FaDeleteLeft /></li>
+            <li className="mb-12" onClick={() => handleNumberClick(3)}>3</li>
+            <li className="mb-12" onClick={() => handleNumberClick(6)}>6</li>
+            <li className="mb-12" onClick={() => handleNumberClick(9)}>9</li>
+            <li className="mb-12"><FaDeleteLeft /></li>
           </ul>
 
         </div>
@@ -60,6 +61,7 @@ const Wallettwo = () => {
 
       </div>
       <Footer/>
+      <MobileFooter/>
     </div>
   );
 };

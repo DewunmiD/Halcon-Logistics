@@ -33,12 +33,12 @@ const Pagetwo = () => {
     setShowInput(true);
   };
   return (
-      <div className='w-screen h-screen'>
+      <div className='w-full h-screen !px-0 !mx-0 !overflow-hidden'>
        <div className='flex flex-col'>
-        <img className='w-[200px] h-[200px] mt-[-50px] ml-[40px]' alt='' src={images}/>
-        <p className=' text-black ml-[70px] text-4xl font-bold  mt-[-60px]'>Are you<br/>registered</p>
-        <div className='flex justify-end mt-[-130px] mr-[60px] text-1xl'>
-          not registered?<a href="/Pagethree" className="text-red-600 cursor-pointer hover:text-indigo-600">skip</a>
+        <img className='w-[200px] h-[200px] mt-[-50px] sm:[20px] md:ml-[40px]' alt='' src={images}/>
+        <p className=' text-black ml-[60px] text-4xl font-bold  mt-[-60px]'>Are you<br/>registered</p>
+        <div className='flex justify-end mt-[-130px] sm:mr-[20px] md:mr-[60px] text-1xl'>
+          not registered?<a href="/home" className="text-red-600 cursor-pointer hover:text-indigo-600">skip</a>
         </div>
         </div>
         
@@ -50,7 +50,7 @@ const Pagetwo = () => {
                 onKeyPress={handleInputSubmit}
                 onBlur={handleClick}
                 placeholder="Company's Reg.no"
-                className="mt-[200px] ml-[75px]"
+                className="mt-[200px] ml-[65px]"
               />
             ) : (
               <p className='mt-[200px] ml-[75px]'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import MobileFooter from './MobileFooter'
 import { IoMdSad } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 const Deleteaccount = () => {
@@ -11,7 +12,7 @@ const Deleteaccount = () => {
     navigate("/");
   }
   return (
-    <div>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'>
       <Navbar/>
       <h1 className='text-2xl font-medium mt-8 ml-8'>Account Deletion</h1>
       
@@ -46,6 +47,7 @@ const Deleteaccount = () => {
 </div>
 
       <Footer/>
+      <MobileFooter/>
     </div>
       )
     }

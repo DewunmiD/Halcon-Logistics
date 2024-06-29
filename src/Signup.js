@@ -14,7 +14,7 @@ const createAccount = () => {
   navigate("/Pageone");
 }
   return (
-    <div className='h-screen w-screen'>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'>
 
 
 <Link to="/signin">
@@ -29,46 +29,46 @@ const createAccount = () => {
     
     < FaUser className='absolute left-3' />
 
-    <input type='text' placeholder='First Name:' className='w-96 h-12 border rounded pl-8 text-black' />
+    <input type='text' placeholder='First Name:' className='sm:w-80 md:w-96 h-12 border rounded pl-8 text-black' />
   </div>
 
   <div className='relative flex items-center flex-grow mx-auto'>
     
     < FaUser className='absolute left-3' />
 
-    <input type='text' placeholder='Last Name:' className='w-96 h-12 border rounded pl-8 text-black' />
+    <input type='text' placeholder='Last Name:' className='sm:w-80 md:w-96 h-12 border rounded pl-8 text-black' />
   </div>
 
   <div className='relative flex items-center flex-grow mx-auto'>
     
     < MdEmail className='absolute left-3' />
 
-    <input type='text' placeholder='Email:' className='w-96 h-12 border rounded pl-8 text-black' />
+    <input type='text' placeholder='Email:' className='sm:w-80 md:w-96 h-12 border rounded pl-8 text-black' />
   </div>
 
   <div className='relative flex items-center flex-grow mx-auto'>
     
     < FaPhoneAlt className='absolute left-3' />
 
-    <input type='text' placeholder='Phone Number:' className='w-96 h-12 border rounded pl-8 text-black' />
+    <input type='text' placeholder='Phone Number:' className='sm:w-80 md:w-96 h-12 border rounded pl-8 text-black' />
   </div>
 
   <div className='relative flex items-center flex-grow mx-auto'>
     
     < MdPassword className='absolute left-3' />
 
-    <input type='text' placeholder='Password:' className='w-96 h-12 border rounded pl-8 text-black' />
+    <input type='text' placeholder='Password:' className='sm:w-80 md:w-96 h-12 border rounded pl-8 text-black' />
   </div>
 
   <div className='relative flex items-center flex-grow mx-auto'>
     
     < MdPassword className='absolute left-3' />
 
-    <input type='text' placeholder='Confirm Password:' className='w-96 h-12 border rounded pl-8 text-black' />
+    <input type='text' placeholder='Confirm Password:' className='sm:w-80 md:w-96 h-12 border rounded pl-8 text-black' />
   </div>
   
 
-      <button onClick={createAccount} type="submit" className="signup-button  bg-red-600 text-white font-bold text-lg rounded-full py-2 px-4 w-2/6 shadow-lg cursor-pointer mx-auto hover:bg-black"> 
+      <button onClick={createAccount} type="submit" className="signup-button  bg-red-600 text-white font-bold sm:text-sm md:text-lg rounded-full py-2 px-4 w-2/6 shadow-lg cursor-pointer mx-auto hover:bg-black"> 
         Create Account
       </button>
 

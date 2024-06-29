@@ -41,10 +41,10 @@ const Pageone = () => {
 
 
   return (
-    <div className='w-screen h-screen'>
+    <div className='w-full h-full !px-0 !mx-0 !overflow-hidden'>
       <div className='flex flex-col'>
-        <img className='image-header w-[200px] h-[200px] mt-[-40px] ml-[50px]' alt='' src={images} />
-        <p className='text-black text-2xl font-bold ml-[75px] mt-[-60px]'>Tell us about<br />your business</p>
+        <img className='image-header w-[200px] h-[200px] mt-[-40px] sm:[20px] md:ml-[50px]' alt='' src={images} />
+        <p className='text-black text-2xl font-bold ml-[65px] mt-[-60px]'>Tell us about<br />your business</p>
       </div>
 
       <div>
@@ -59,7 +59,7 @@ const Pageone = () => {
           }
         </div>
 
-        <p className='text-red-600 text-center mt-8 text-2xl cursor-pointer' onClick={() => document.getElementById('imageInput').click()}>Click Here To Upload business Logo</p>
+        <p className='text-red-600 text-center mt-8 sm:text-md md:text-2xl cursor-pointer' onClick={() => document.getElementById('imageInput').click()}>Click Here To Upload business Logo</p>
 
       
 
@@ -71,7 +71,7 @@ const Pageone = () => {
           onKeyPress={handleInputSubmit}
           onBlur={handleClick}
           placeholder="Enter your business name"
-          className="mt-28 ml-[75px]"
+          className="mt-28 ml-[65px]"
         />
       ) : (
         <p className='font-bold mt-[50px] ml-[75px]'>
@@ -79,9 +79,14 @@ const Pageone = () => {
         </p>
       )}
 
-
-        <div className='flex justify-center mt-[70px]'>
-          <button onClick={Upload} className='bg-red-600 text-white font-bold text-lg rounded-full py-2 px-4 w-2/6 shadow-lg cursor-pointer mt-[-20px] hover:bg-black'>Next</button>
+          <div className="flex justify-center mt-8">
+          <button
+            onClick={Upload}
+            className="bg-red-600 text-white font-bold text-lg rounded-full py-2 px-4 w-full md:w-1/2 xl:w-1/3 shadow-lg hover:bg-black"
+          >
+            Next
+          </button>
+          
         </div>
       </div>
     </div>
@@ -89,3 +94,5 @@ const Pageone = () => {
 };
 
 export default Pageone;
+
+

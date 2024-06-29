@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar'
 import Footer from './Footer'
+import MobileFooter from './MobileFooter'
 import { TbCurrencyNaira } from "react-icons/tb";
 import images from './images/istockphoto-817101512-612x612 1(1).svg'
 const Wallet = () => {
   const [balance] = useState(1000);
  
   return (
-    <div>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'>
       <Navbar/>
       <h1 className="mt-8 text-center font-bold text-3xl">Wallet</h1>
       <div className='bg-black text-white rounded-lg text-center mt-4 h-[200px] w-5/6 mx-auto flex flex-col'>
@@ -36,6 +37,7 @@ const Wallet = () => {
           <div className='text-center mt-6 text-3xl font-medium'>All transactions will be listed here</div>
       
       <Footer/>
+      <MobileFooter/>
     </div>
   )
 }

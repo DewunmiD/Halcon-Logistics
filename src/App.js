@@ -24,6 +24,7 @@ import Confirmation from './Confirmation.js'
 import Deleteaccount from './Deleteaccount.js'
 import Pagefive from './Pagefive.js'
 import Pagesix from './Pagesix.js'
+import MobileFooter from './MobileFooter.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 function App() {
@@ -57,6 +58,7 @@ function App() {
     <Route path="/Confirmation" element={<Confirmation />} />
     <Route path="/pagefive" element={<Pagefive />} />
     <Route path="/pagesix" element={<Pagesix />} />
+    <Route path="/mobilefooter" element={<MobileFooter />} />
   </Routes>
 </Router>
      {/* <Home/>

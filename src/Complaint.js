@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar'
 import Footer from './Footer'
+import MobileFooter from './MobileFooter'
 import images from './images/istockphoto-817101512-612x612 1(1).svg'
 const Complaint = () => {
 
@@ -28,7 +29,7 @@ const Complaint = () => {
     setShowInput(true);
   };
   return (
-    <div>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'>
       <Navbar/>
       <h1 className="mt-8 text-center font-bold text-3xl">Complaint</h1>
       <img
@@ -53,6 +54,7 @@ const Complaint = () => {
       </p>
       )}
       <Footer/>
+      <MobileFooter/>
     </div>
   )
 }

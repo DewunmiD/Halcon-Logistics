@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar'
 import Footer from './Footer'
+import MobileFooter from './MobileFooter'
 import { FaUser } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 const Profiletwo = () => {
@@ -14,7 +15,7 @@ const Profiletwo = () => {
     navigate("/Profile");
   };
   return (
-    <div><Navbar/>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'><Navbar/>
     <h2 className='text-center text-4xl font-bold mt-12'>Take a picture or select from your gallery</h2>
     
    
@@ -38,6 +39,7 @@ const Profiletwo = () => {
 
     <div className='flex justify-center items-center mt-40'><button onClick={Ok} className='text-black bg-zinc-400 font-bold py-4 px-12 rounded-xl text-2xl hover:bg-blue-600'>Next</button></div>
       <Footer/>
+      <MobileFooter/>
     </div>
       )
     }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import MobileFooter from './MobileFooter'
 import images from './images/istockphoto-817101512-612x612 1(1).svg'
 // import { MdHorizontalRule } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
@@ -11,13 +12,25 @@ const Pagesix = () => {
     navigate("/Addrider");
   };
 
+
+  const Five = () => {
+    navigate("/Pagefour");
+  };
+
+  const Six = () => {
+    navigate("/Pagefive");
+  };
+
   return (
-    <div><Navbar/>
+    <div className='w-full !px-0 !mx-0 !overflow-hidden'><Navbar/>
     <div className="flex justify-between mt-4">
       
-      <h1 className='ml-[20px] font-bold text-3xl '><a href="/Pagefour">All</a></h1>
-    <h1 className='font-bold text-3xl'><a href="/Pagesix">Active</a></h1>
-    <h1 className='font-bold text-3xl mr-[20px]'>Offline<p><div className="w-6/6 border-b-black border-b-2"></div></p></h1>
+      <h1 className='ml-[20px] font-bold text-3xl' onClick={Five}>All</h1>
+
+    <h1 className='font-bold text-3xl' onClick={Six}>Active</h1>
+
+    <h1 className='font-bold text-3xl mr-[20px]'>Offline<p>
+      <div className="w-6/6 border-b-black border-b-2"></div></p></h1>
     </div>
     <img
           src={images} alt='' className='mx-auto mt-[80px]'/>
@@ -32,6 +45,7 @@ const Pagesix = () => {
 
 
     <Footer/>
+    <MobileFooter/>
     </div>
 
   )
